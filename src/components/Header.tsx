@@ -1,6 +1,6 @@
 "use client";
 import { Logo } from "@/components/Logo";
-import { Menu } from "lucide-react";
+import { Menu, MoonIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -34,8 +34,11 @@ export default function Header() {
           </div>
 
           {/* Link para baixar o CV */}
-          <div className="ml-auto hidden md:block">
+          <div className="ml-auto hidden justify-center md:block">
             <Link href="/andrewgomesCV.pdf">Baixar CV</Link>
+          </div>
+          <div className="p-4">
+            <MoonIcon />
           </div>
 
           {/* dropdown para dispositivos móveis */}
