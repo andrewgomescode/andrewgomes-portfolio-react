@@ -2,6 +2,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaCss3, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FiFigma, FiFramer } from "react-icons/fi";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 const LOGOS = [
   <FaHtml5 key="html5" size="2em" className="text-sky-950" />,
@@ -13,6 +14,7 @@ const LOGOS = [
   <SiNextdotjs key="Next" size="2em" className="text-sky-950" />,
   <FaGithub key="github" size="2em" className="text-sky-950" />,
   <FiFigma key="figma" size="2em" className="text-sky-950" />,
+  <VscVscode key="figma" size="2em" className="text-sky-950" />,
   <FiFramer key="framer" size="2em" className="text-sky-950" />,
 ];
 

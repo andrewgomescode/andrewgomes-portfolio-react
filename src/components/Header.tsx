@@ -37,7 +37,7 @@ export default function Header() {
           <div className="ml-auto hidden justify-center md:block">
             <Link href="/andrewgomesCV.pdf">Baixar CV</Link>
           </div>
-          <div className="p-4">
+          <div className="ml-6 rounded-full border border-sky-950 p-1">
             <MoonIcon />
           </div>
 

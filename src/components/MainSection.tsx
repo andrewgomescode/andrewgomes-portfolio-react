@@ -29,7 +29,7 @@ export default function MainSection() {
         </p>
       </div>
       {/* Seta animada */}
-      <div className="absolute bottom-8 flex animate-bounce flex-col items-center">
+      <div className="absolute bottom-12 flex animate-bounce flex-col items-center">
         <ArrowDown
           className={`h-10 w-10 text-indigo-50 transition-opacity duration-500 ${
             isVisible ? "opacity-100" : "opacity-0"
