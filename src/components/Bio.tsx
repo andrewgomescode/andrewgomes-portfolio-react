@@ -10,7 +10,7 @@ export function Bio() {
           <Image src={BioImage} alt="Andrew Gomes" />
         </div>
         <div className="flex max-w-lg flex-col gap-8">
-          <h2 className="text-center text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-center text-4xl font-semibold text-indigo-950 md:text-5xl lg:text-6xl">
             Sobre
           </h2>
           <div className="">
@@ -20,29 +20,36 @@ export function Bio() {
               interfaces visuais rápidas e fluidas. Atualmente tenho me
               concentrado em soluções utilizando:
             </p>
-            <div className="mt-4 flex cursor-default justify-center gap-4">
-              <h3 className="rounded-xl bg-orange-400 p-1 text-sm font-semibold text-white">
+            <div className="mt-4 flex cursor-default flex-wrap justify-center gap-4">
+              <h3 className="rounded-xl bg-orange-400 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Html
               </h3>
-              <h3 className="rounded-xl bg-blue-400 p-1 text-sm font-semibold text-white">
+              <h3 className="rounded-xl bg-blue-400 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Css
               </h3>
-              <h3 className="rounded-xl bg-blue-300 p-1 text-sm font-semibold text-white">
+              <h3 className="rounded-xl bg-blue-300 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Tailwind
               </h3>
-              <h3 className="rounded-xl bg-yellow-400 p-1 text-sm font-semibold text-white">
+              <h3 className="rounded-xl bg-yellow-400 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Javascript
               </h3>
-              <h3 className="rounded-xl bg-blue-800 p-1 text-sm font-semibold text-white">
+              <h3 className="rounded-xl bg-blue-800 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 React
               </h3>
-              <h3 className="rounded-xl bg-black p-1 text-sm font-semibold text-white">
+              <h3 className="rounded-xl bg-black p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Next
               </h3>
             </div>
-            <p className="mt-4 text-start">Aplicação de Clean Code</p>
+            <p className="mt-4 text-center">
+              Aplicação de Clean Code, manutenção e mais.
+            </p>
           </div>
-          <Link href="/">Baixar CV</Link>
+          <Link
+            className="rounded-lg bg-indigo-500 p-2 text-center text-indigo-100 transition-transform duration-300 hover:scale-110"
+            href="/"
+          >
+            Baixar CV
+          </Link>
         </div>
       </div>
     </section>
