@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BioImage from "@/../public/bio.png";
+import BioImage from "@/../public/bioimage.png";
 import Link from "next/link";
 
 export function Bio() {
