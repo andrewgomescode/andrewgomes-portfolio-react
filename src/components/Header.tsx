@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="fixed top-0 z-50 flex min-h-[70px] w-full bg-sky-200">
+      <nav className="fixed top-0 z-50 flex min-h-[70px] w-full bg-sky-200 shadow-md">
         <div className="container m-auto flex w-full items-center justify-between">
           {/* Menu para dispositivos maiores */}
           <ul className="hidden gap-4 md:flex">
