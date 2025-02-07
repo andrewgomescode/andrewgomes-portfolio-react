@@ -11,49 +11,57 @@ interface Projeto {
 
 export function Cards({ projeto }: { projeto: Projeto }) {
   return (
-    <div className="max-w-fit rounded-xl border border-indigo-100 bg-white shadow-md transition-transform duration-300 hover:scale-105">
+    <div className="flex max-w-fit flex-col rounded-xl bg-indigo-50 shadow-md transition-transform duration-300 hover:scale-105">
       <Image
         className="rounded-t-xl"
-        alt="Imagem Preview do Projeto "
+        alt="Imagem Preview do Projeto"
         src={projeto.imagem}
       />
-      <div className="mb-5 mt-5 flex flex-wrap justify-center gap-2">
-        {projeto.tecnologias.map((tech, index) => (
+      <div className="mb-5 mt-5 flex flex-wrap justify-center gap-2 pl-1 pr-1">
+        {projeto.tecnologias.map((tecnologia, index) => (
           <button
             key={index}
             className={`rounded-xl p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110 ${
-              tech === "Html"
+              tecnologia === "Html"
                 ? "bg-orange-400"
-                : tech === "Css"
+                : tecnologia === "Css"
                   ? "bg-blue-400"
-                  : tech === "Javascript"
+                  : tecnologia === "Javascript"
                     ? "bg-yellow-400"
-                    : tech === "React"
+                    : tecnologia === "React"
                       ? "bg-blue-800"
-                      : tech === "Tailwind"
+                      : tecnologia === "Tailwind"
                         ? "bg-blue-300"
-                        : tech === "Typescript"
+                        : tecnologia === "Typescript"
                           ? "bg-blue-700"
-                          : tech === "Next"
+                          : tecnologia === "Next"
                             ? "bg-black"
-                            : "bg-gray-500" // Fallback para tecnologias não especificadas
+                            : "bg-gray-500" // Para tecnologias não especificadas
             }`}
           >
-            {tech}
+            {tecnologia}
           </button>
         ))}
       </div>
-      <div className="">
-        <h2 className="text-center text-xl font-bold">{projeto.nome}</h2>
-        <p className="text-gray-700">{projeto.descricao}</p>
-        <Link
-          href={projeto.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 underline hover:text-blue-700"
-        >
-          Visitar Projeto
-        </Link>
+      <div className="flex flex-1 flex-col">
+        <div className="mb-3 bg-white p-[0.5px]"></div>
+        <h3 className="ml-5 mr-5 break-words text-center text-2xl font-semibold text-indigo-950 md:text-lg lg:text-xl">
+          {projeto.nome}
+        </h3>
+        <p className="ml-1 mr-1 mt-2 break-words p-1 text-start indent-4 text-indigo-950">
+          {projeto.descricao}
+        </p>
+
+        <div className="mt-auto">
+          <Link
+            href={projeto.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 flex justify-center rounded-b-xl bg-indigo-500 p-2 text-indigo-100 shadow-md hover:bg-indigo-400"
+          >
+            Visitar Projeto
+          </Link>
+        </div>
       </div>
     </div>
   );
