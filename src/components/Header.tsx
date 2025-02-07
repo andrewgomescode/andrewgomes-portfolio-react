@@ -15,29 +15,31 @@ export default function Header() {
         <div className="container m-auto flex w-full items-center justify-between">
           {/* Menu para dispositivos maiores */}
           <ul className="hidden gap-4 md:flex">
-            <li>
+            <li className="transition-transform duration-300 hover:scale-110 hover:drop-shadow-md">
               <Link href="#bio">Bio</Link>
             </li>
-            <li>
+            <li className="transition-transform duration-300 hover:scale-110">
               <Link href="#projetos">Projetos</Link>
             </li>
-            <li>
+            <li className="transition-transform duration-300 hover:scale-110">
               <Link href="#certificados">Certificados</Link>
             </li>
-            <li>
+            <li className="transition-transform duration-300 hover:scale-110">
               <Link href="#artigos">Artigos</Link>
             </li>
           </ul>
 
-          <div className="absolute left-1/2 -translate-x-1/2 transform">
-            <Logo />
+          <div className="absolute left-1/2 -translate-x-1/2 transform transition-transform duration-300 hover:scale-110">
+            <Link href="#home">
+              <Logo />
+            </Link>
           </div>
 
           {/* Link para baixar o CV */}
-          <div className="ml-auto hidden justify-center md:block">
+          <div className="ml-auto hidden justify-center transition-transform duration-300 hover:scale-125 md:block">
             <Link href="/andrewgomesCV.pdf">Baixar CV</Link>
           </div>
-          <div className="ml-6 rounded-full border border-sky-950 p-1">
+          <div className="ml-6 rounded-full border border-sky-950 p-1 transition-transform duration-300 hover:scale-125">
             <MoonIcon />
           </div>
 
@@ -48,7 +50,7 @@ export default function Header() {
             </button>
 
             {isOpen && (
-              <ul className="absolute right-0 top-[70px] flex w-full flex-col items-center gap-4 bg-sky-200 py-4">
+              <ul className="absolute right-0 top-[70px] flex w-full flex-col items-center gap-4 bg-sky-200 py-4 font-normal text-indigo-950">
                 <li>
                   <Link href="#bio" onClick={toggleMenu}>
                     Bio
