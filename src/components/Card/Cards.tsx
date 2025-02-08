@@ -46,7 +46,7 @@ export function Cards({ projeto }: { projeto: Projeto }) {
         ))}
       </div>
 
-      <div className="mb-3 bg-white p-[0.5px]"></div>
+      <div className="mb-3 bg-indigo-100 p-[0.5px]"></div>
 
       <h3 className="ml-5 mr-5 text-center text-2xl font-semibold text-indigo-950 md:text-lg lg:text-xl">
         {projeto.nome}
