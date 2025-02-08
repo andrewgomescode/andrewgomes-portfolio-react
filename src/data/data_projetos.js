@@ -1,54 +1,78 @@
-import restaurante from "/public/restaurante.png";
+import academia from "/public/academia.jpg";
+import agencia from "/public/agencia.jpg";
+import forms from "/public/forms.png";
+import ignite from "/public/ignite.png";
+import parallax from "/public/parallax.jpg";
+import portfolio from "/public/portfolio.png";
+import restaurante from "/public/restaurante.jpg";
+import sorveteria from "/public/sorveteria.jpg";
+
 
 export const data_projetos = [
   {
     id: 1,
-    nome: "Restaurante - Cardápio",
-    imagem: restaurante,
-    descricao: "Descrição do Projeto 1 dasdsadsadsadsadsadsadsadsadsadadsadsadasdsa",
-    url: "https://website-restaurante-react.netlify.app/",
-    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "React", "Next"],
+    nome: "(Este Site) - Portfólio",
+    imagem: portfolio,
+    descricao: "Descrição do Projeto",
+    url: "https://andrewgomes-portfolio.netlify.app/",
+    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "Typescript", "React", "Next"],
   },
   {
     id: 2,
-    nome: "Projeto 2",
+    nome: "Restaurante - Cardápio Digital",
     imagem: restaurante,
-    descricao: "Descrição do Projeto 2dasdsadasdsadasdasdasdasdsadasdsadadsadasdasdadasds",
+    descricao: "Descrição do Projeto",
     url: "https://website-restaurante-react.netlify.app/",
-    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "React", "Next"],
+    tecnologias: ["Html", "Css", "Javascript", "React", "Next"],
   },
   {
     id: 3,
-    nome: "Projeto 3",
-    imagem: restaurante,
-    descricao: "Descrição do Projeto 3",
-    url: "https://website-restaurante-react.netlify.app/",
-    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "React", "Next"],
+    nome: "Projeto Forms",
+    imagem: forms,
+    descricao: "Descrição do Projeto",
+    url: "https://website-forms-tailwind.netlify.app/",
+    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "Typescript", "React", "Next"],
   },
   {
     id: 4,
-    nome: "Projeto 4",
-    imagem: restaurante,
-    descricao: "Descrição do Projeto 4dasdsadasdasdasdasdasdasdasdsadadadsddasdasdsadasdsadasdsadasd",
-    url: "https://website-restaurante-react.netlify.app/",
-    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "React", "Next"],
+    nome: "Ignite Feed",
+    imagem: ignite,
+    descricao: "Descrição do Projeto",
+    url: "https://ignite-website.netlify.app/",
+    tecnologias: ["Html", "Css", "Javascript", "Typescript", "React", "Vite"],
   },
 
   {
     id: 5,
-    nome: "Projeto 5",
-    imagem: restaurante,
-    descricao: "Descrição do Projeto 5",
-    url: "https://website-restaurante-react.netlify.app/",
-    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "React", "Next"],
+    nome: "Agência Digital",
+    imagem: agencia,
+    descricao: "Descrição do Projeto",
+    url: "https://agencia-design-digital.netlify.app/",
+    tecnologias: ["Html", "Css", "Javascript", "React", "Next"],
   },
 
   {
     id: 6,
-    nome: "Projeto 6",
-    imagem: restaurante,
-    descricao: "Descrição do Projeto 6",
-    url: "https://website-restaurante-react.netlify.app/",
-    tecnologias: ["Html", "Css", "Tailwind", "Javascript", "React", "Next"],
+    nome: "Academia Evolve",
+    imagem: academia,
+    descricao: "Descrição do Projeto",
+    url: "https://academiaevolve.netlify.app/",
+    tecnologias: ["Html", "Css", "Bootstrap", "Javascript"],
+  },
+  {
+    id: 8,
+    nome: "Manhattan - Coffee House",
+    imagem: parallax,
+    descricao: "Descrição do Projeto",
+    url: "https://website-cafeteria.netlify.app/",
+    tecnologias: ["Html", "Css", "Bootstrap", "Javascript"],
+  },
+  {
+    id: 7,
+    nome: "Sorveteria",
+    imagem: sorveteria,
+    descricao: "Descrição do Projeto",
+    url: "https://projeto-sorv-laura.netlify.app/",
+    tecnologias: ["Html", "Css", "Javascript", "React"],
   },
 ];

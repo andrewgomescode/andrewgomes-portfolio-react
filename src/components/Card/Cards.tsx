@@ -11,9 +11,9 @@ interface Projeto {
 
 export function Cards({ projeto }: { projeto: Projeto }) {
   return (
-    <div className="flex max-w-fit flex-col rounded-xl bg-indigo-50 shadow-md transition-transform duration-300 hover:scale-105">
+    <div className="flex h-full flex-col rounded-xl bg-indigo-50 shadow-md transition-transform duration-300 hover:scale-105">
       <Image
-        className="rounded-t-xl"
+        className="h-auto w-full rounded-t-xl"
         alt="Imagem Preview do Projeto"
         src={projeto.imagem}
       />
@@ -36,32 +36,35 @@ export function Cards({ projeto }: { projeto: Projeto }) {
                           ? "bg-blue-700"
                           : tecnologia === "Next"
                             ? "bg-black"
-                            : "bg-gray-500" // Para tecnologias não especificadas
+                            : tecnologia === "Vite"
+                              ? "bg-purple-900"
+                              : "bg-gray-500" // Para tecnologias não especificadas
             }`}
           >
             {tecnologia}
           </button>
         ))}
       </div>
-      <div className="flex flex-1 flex-col">
-        <div className="mb-3 bg-white p-[0.5px]"></div>
-        <h3 className="ml-5 mr-5 break-words text-center text-2xl font-semibold text-indigo-950 md:text-lg lg:text-xl">
-          {projeto.nome}
-        </h3>
-        <p className="ml-1 mr-1 mt-2 break-words p-1 text-start indent-4 text-indigo-950">
-          {projeto.descricao}
-        </p>
 
-        <div className="mt-auto">
-          <Link
-            href={projeto.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 flex justify-center rounded-b-xl bg-indigo-500 p-2 text-indigo-100 shadow-md hover:bg-indigo-400"
-          >
-            Visitar Projeto
-          </Link>
-        </div>
+      <div className="mb-3 bg-white p-[0.5px]"></div>
+
+      <h3 className="ml-5 mr-5 text-center text-2xl font-semibold text-indigo-950 md:text-lg lg:text-xl">
+        {projeto.nome}
+      </h3>
+
+      <p className="ml-1 mr-1 mt-2 break-all p-1 text-start indent-4 text-indigo-950">
+        {projeto.descricao}
+      </p>
+
+      <div className="mt-auto">
+        <Link
+          href={projeto.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 flex justify-center rounded-b-xl bg-indigo-500 p-2 text-indigo-100 shadow-md hover:bg-indigo-400"
+        >
+          Visitar Projeto
+        </Link>
       </div>
     </div>
   );
