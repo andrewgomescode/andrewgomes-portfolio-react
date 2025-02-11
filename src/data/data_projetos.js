@@ -14,7 +14,7 @@ export const data_projetos = [
     nome: "(Este Site) - Portfólio",
     imagem: portfolio,
     descricao: "Portfólio feito em React e utilizando NextJS. Estilizado com Tailwind. Feito em 7 dias.",
-    url: "https://andrewgomes-portfolio.netlify.app/",
+    url: "https://andrew-gomes.netlify.app/",
     tecnologias: ["Html", "Css", "Tailwind", "Javascript", "Typescript", "React", "Next"],
   },
 

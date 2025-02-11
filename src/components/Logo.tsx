@@ -3,7 +3,7 @@ export function Logo() {
     <div>
       <strong>
         <svg
-          className="h-12 w-12 text-indigo-950"
+          className="h-12 w-12 text-indigo-950 hover:text-indigo-900"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 759 750"
         >
