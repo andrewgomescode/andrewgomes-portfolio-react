@@ -5,3 +5,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* estilização das setas do Slick-slider */
+.slick-prev {
+  left: -1vh !important;
+  z-index: 10;
+}
+
+.slick-next {
+  right: -1vh !important;
+  z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(106, 109, 255) !important;
+}

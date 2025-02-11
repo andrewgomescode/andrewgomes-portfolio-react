@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export function Bio() {
   return (
-    <section id="bio" className="flex items-center justify-center bg-sky-200">
+    <section
+      id="bio"
+      className="flex cursor-default items-center justify-center bg-sky-200"
+    >
       <div className="container mx-auto flex flex-wrap items-center justify-center gap-3 py-20">
         <div className="max-w-md">
           <Image src={BioImage} alt="Andrew Gomes" />
@@ -20,7 +23,7 @@ export function Bio() {
               interfaces visuais rápidas e fluidas. Atualmente tenho me
               concentrado em soluções utilizando:
             </p>
-            <div className="mt-5 flex cursor-default flex-wrap justify-center gap-4">
+            <div className="mt-5 flex cursor-pointer flex-wrap justify-center gap-4">
               <h3 className="rounded-xl bg-orange-400 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Html
               </h3>
@@ -48,8 +51,9 @@ export function Bio() {
             </p>
           </div>
           <Link
-            className="rounded-lg bg-indigo-500 p-2 text-center text-indigo-100 transition-transform duration-300 hover:scale-110"
-            href="/"
+            className="rounded-lg bg-indigo-500 p-2 text-center text-indigo-100 transition-transform duration-300 md:hover:scale-110 lg:hover:scale-110"
+            href="/CV_Andrew_Gomes.pdf"
+            target="_blank"
           >
             Baixar CV
           </Link>

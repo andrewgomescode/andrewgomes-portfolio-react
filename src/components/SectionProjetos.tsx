@@ -1,9 +1,9 @@
 import { data_projetos } from "@/data/data_projetos";
 import { Cards } from "./Card/Cards";
 
-export function SectionCards() {
+export function SectionProjetos() {
   return (
-    <div className="bg-sky-100">
+    <section id="projetos" className="cursor-default bg-sky-100">
       <div className="container mx-auto px-4 py-20">
         <h2 className="mb-14 text-center text-4xl font-semibold text-indigo-950 md:text-5xl lg:text-6xl">
           Projetos
@@ -14,6 +14,6 @@ export function SectionCards() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

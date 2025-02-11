@@ -8,8 +8,39 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Andrew Gomes - Portfólio",
-  description: "Andrew Gomes - Desenvolvedor Front-end",
+  metadataBase: new URL("https://andrew-gomes.netlify.app"),
+  title: "Andrew Gomes",
+  description: "Portfólio de Andrew Gomes - Desenvolvedor Front-end",
+  keywords: [
+    "Desenvolvedor frontend",
+    "UI Designer",
+    "React",
+    "Next.js",
+    "Portfolio",
+  ],
+  authors: [{ name: "Andrew Gomes", url: "https://andrew-gomes.netlify.app" }],
+  openGraph: {
+    type: "website",
+    url: "https://andrew-gomes.netlify.app",
+    title: "Andrew Gomes - Desenvolvedor Front-end",
+    description: "Portfólio de Andrew Gomes - Desenvolvedor Front-end",
+    siteName: "Andrew Gomes",
+    images: [
+      {
+        url: "https://andrew-gomes.netlify.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Andrew Gomes - Desenvolvedor Front-end",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://andrew-gomes.netlify.app",
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className="scrollbar_style">
+    <html lang="pt-br" className="scrollbar_style antialiased">
       <body className={poppins.className}>{children}</body>
     </html>
   );
