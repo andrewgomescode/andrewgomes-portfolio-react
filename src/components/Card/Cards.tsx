@@ -11,7 +11,7 @@ interface Projeto {
 
 export function Cards({ projeto }: { projeto: Projeto }) {
   return (
-    <div className="mt-5 flex h-full flex-col rounded-xl bg-zinc-50 shadow-md transition-transform duration-300 hover:scale-105">
+    <div className="flex h-full flex-col rounded-xl bg-white shadow-md transition-transform duration-300 hover:scale-105">
       <Image
         className="h-auto w-full rounded-t-xl"
         alt="Imagem Preview do Projeto"
