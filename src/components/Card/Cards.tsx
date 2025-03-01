@@ -38,7 +38,13 @@ export function Cards({ projeto }: { projeto: Projeto }) {
                             ? "bg-black"
                             : tecnologia === "Vite"
                               ? "bg-purple-900"
-                              : "bg-gray-500" // Padrão para não listado
+                              : tecnologia === "Prisma"
+                                ? "bg-slate-600"
+                                : tecnologia === "PostgreSQL"
+                                  ? "bg-sky-700"
+                                  : tecnologia === "CRUD"
+                                    ? "bg-neutral-800"
+                                    : "bg-gray-500" // Padrão para não listado
             }`}
           >
             {tecnologia}
