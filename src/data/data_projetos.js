@@ -16,7 +16,7 @@ export const data_projetos = [
     nome: "OVERCUB - Serviços de Boost",
     imagem: overcub,
     descricao: "Aplicação Web API REST com registro, login e cadastro, um dashboard robusto, chat, sistema de ticket, criações automatizadas de produtos, notificações, etc. Inúmeras funcionalidades. !Projeto em desenvolvimento!  . CRUD, utilizando React, NextJS, Prisma e PostgreSQL.",
-    url: "https://proj-lista-de-compras.vercel.app/",
+    url: "https://overcub.com",
     tecnologias: ["Html", "Css", "Javascript", "Typescript", "Tailwind", "React", "Next", "Prisma", "PostgreSQL", "CRUD"],
   },
   {
