@@ -43,7 +43,7 @@ export function Bio() {
                 React
               </h3>
               <h3 className="rounded-xl bg-black p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
-                Next
+                Next.js
               </h3>
             </div>
             <p className="mt-4 text-center indent-4 text-indigo-950">
