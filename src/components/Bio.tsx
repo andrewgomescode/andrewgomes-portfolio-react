@@ -18,8 +18,8 @@ export function Bio() {
           </h2>
           <div className="">
             <p className="mt-5 text-start indent-4 text-indigo-950">
-              Olá! Meu nome é Andrew Gomes e sou Desenvolvedor Front-End com 1
-              ano e meio de experiência. Estou me especializando em criar
+              Olá! Meu nome é Andrew Gomes e sou Desenvolvedor Front-End com 2
+              anos e meio de experiência em React e Next.js. Estou me especializando em criar
               interfaces visuais rápidas e fluidas. Atualmente tenho me
               concentrado em soluções utilizando:
             </p>
