@@ -18,9 +18,8 @@ export function Bio() {
           </h2>
           <div className="">
             <p className="mt-5 text-start indent-4 text-indigo-950">
-              Olá! Meu nome é Andrew Gomes e sou Desenvolvedor Front-End com 2
-              anos e meio de experiência em React e Next.js. Estou me especializando em criar
-              interfaces visuais rápidas e fluidas. Atualmente tenho me
+              Olá! Meu nome é Andrew Gomes e sou Desenvolvedor Web com 2
+              anos e meio de experiência em React, Next.js e Node.js. Faço a criação de interfaces visuais rápidas e fluidas. Atualmente tenho me
               concentrado em soluções utilizando:
             </p>
             <div className="mt-5 flex cursor-pointer flex-wrap justify-center gap-4">
@@ -44,6 +43,9 @@ export function Bio() {
               </h3>
               <h3 className="rounded-xl bg-black p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
                 Next.js
+              </h3>
+              <h3 className="rounded-xl bg-blue-400 p-1 text-sm font-semibold text-white transition-transform duration-300 hover:scale-110">
+                Node.js
               </h3>
             </div>
             <p className="mt-4 text-center indent-4 text-indigo-950">
